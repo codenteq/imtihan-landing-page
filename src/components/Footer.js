@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ApplicationLogo from '@/pages/components/ApplicationLogo'
+import ApplicationLogo from '@/src/components/ApplicationLogo'
 
 export default function Footer({className}) {
     return (
@@ -29,6 +29,7 @@ export default function Footer({className}) {
                                     <h4 className="mb-4 text-base font-medium">Daha fazla</h4>
                                     <div className="flex flex-col gap-3">
                                         <a className="md:hover:underline" href="https://www.linkedin.com/company/codenteq" target="_blank">Kariyer</a>
+                                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                                         <a className="md:hover:underline" href="https://github.com/codenteq/imtihan">Açık Web'e Katkı</a>
                                         <a className="md:hover:underline" href="https://github.com/sponsors/codenteq">Sponsor ol</a>
                                     </div>

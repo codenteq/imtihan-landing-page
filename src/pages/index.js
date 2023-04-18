@@ -1,13 +1,13 @@
 import Head from "next/head";
-import ApplicationLogo from "@/pages/components/ApplicationLogo";
-import NavLink from "@/pages/components/NavLink";
+import ApplicationLogo from "@/src/components/ApplicationLogo";
+import NavLink from "@/src/components/NavLink";
 import {CalendarIcon, CheckIcon, CreditCardIcon, MicrophoneIcon, VideoCameraIcon} from "@heroicons/react/24/outline";
-import Button from "@/pages/components/Button";
-import Input from "@/pages/components/Input";
+import Button from "@/src/components/Button";
+import Input from "@/src/components/Input";
 import Image from "next/image";
-import HomeImage from '../public/home.webp';
-import Footer from "@/pages/components/Footer";
-import ThemeToggle from "@/pages/components/ThemeToggle";
+import HomeImage from '../../public/home.webp';
+import Footer from "@/src/components/Footer";
+import ThemeToggle from "@/src/components/ThemeToggle";
 
 export default function Home() {
     return (
@@ -146,8 +146,8 @@ export default function Home() {
                                 <span className="hidden md:inline">İmtihan </span>
                                 <span>Entegrasyonlar</span>
                             </h2>
-
                             <p className="text-lg md:text-2xl max-w-[776px] mx-auto text-zinc-900 dark:text-zinc-50">
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
                                 İmtihan'ın özel entegrasyonları, ihtiyacınız olan her şeyi sağlayacak ve
                                 üretkenliğinizi artırmanıza yardımcı olacaktır.
                             </p>
