@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
 
   nginx:
-    container_name: nginx
+    container_name: landing-page-nginx
     image: nginx:stable-alpine
     ports:
       - "80:80"
