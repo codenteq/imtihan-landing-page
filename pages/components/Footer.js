@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ApplicationLogo from '@/pages/components/ApplicationLogo'
 
-export default function Footer({className}) {
+export default function Footer() {
     return (
         <footer className="p-2 md:p-4">
             <div className="relative">
@@ -28,7 +28,6 @@ export default function Footer({className}) {
                                 <div className="col-span-6">
                                     <h4 className="mb-4 text-base font-medium">Daha fazla</h4>
                                     <div className="flex flex-col gap-3">
-                                        <a className="md:hover:underline" href="https://www.linkedin.com/company/codenteq" target="_blank">Kariyer</a>
                                         <a className="md:hover:underline" href="https://github.com/codenteq/imtihan">Açık Web'e Katkı</a>
                                         <a className="md:hover:underline" href="https://github.com/sponsors/codenteq">Sponsor ol</a>
                                     </div>
