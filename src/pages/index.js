@@ -166,6 +166,7 @@ export default function Home() {
                                         className="inline-flex items-center justify-center w-32 h-32 lg:w-44 lg:h-44 border border-neutral-200 rounded-2xl">
                                         <CreditCardIcon className="w-14 h-14 lg:w-22 lg:h-22" />
                                     </div>
+
                                     <h3>Iyzico</h3>
                                 </div>
 
