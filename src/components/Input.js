@@ -1,13 +1,12 @@
 import React from 'react';
 
-// eslint-disable-next-line react/display-name
 const Input = React.forwardRef(
     ({ disabled = false, className, ...props }, ref) => (
         <input
             ref={ref}
             {...props}
             disabled={disabled}
-            className={`${className} border border-zinc-500 focus:ring-brand dark:bg-zinc-900 text-zinc-900 dark:text-zinc-300 rounded-lg p-2.5`}
+            className={`${className} transition placeholder:transition hover:border-zinc-900 dark:hover:border-zinc-300 hover:placeholder:text-zinc-900 dark:hover:placeholder:text-zinc-300 focus:ring-transparent focus:border-zinc-900 dark:focus:border-zinc-300 dark:bg-black text-zinc-900 dark:text-zinc-300 focus:placeholder:text-zinc-900 dark:focus:placeholder:text-zinc-300 rounded-lg p-2.5`}
         />
     ),
 );
