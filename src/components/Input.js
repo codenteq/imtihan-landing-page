@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+// eslint-disable-next-line react/display-name
 const Input = React.forwardRef(
     ({ disabled = false, className, ...props }, ref) => (
         <input
