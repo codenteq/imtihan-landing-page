@@ -1,6 +1,5 @@
 import Link from "next/link";
-import ApplicationLogo from '@/src/components/ApplicationLogo'
-
+import ApplicationLogo from '@/pages/components/ApplicationLogo'
 
 export default function Footer() {
     return (
