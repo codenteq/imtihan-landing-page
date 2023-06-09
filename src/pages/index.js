@@ -1,6 +1,6 @@
 import Head from "next/head";
-import ApplicationLogo from "@/pages/components/ApplicationLogo";
-import NavLink from "@/pages/components/NavLink";
+import ApplicationLogo from "@/src/components/ApplicationLogo";
+import NavLink from "@/src/components/NavLink";
 import {
     CalendarIcon, CheckBadgeIcon,
     CheckCircleIcon,
@@ -9,12 +9,12 @@ import {
     MicrophoneIcon,
     VideoCameraIcon
 } from "@heroicons/react/24/outline";
-import Button from "@/pages/components/Button";
-import Input from "@/pages/components/Input";
+import Button from "@/src/components/Button";
+import Input from "@/src/components/Input";
 import Image from "next/image";
-import HomeImage from '../public/home.webp';
-import Footer from "@/pages/components/Footer";
-import ThemeToggle from "@/pages/components/ThemeToggle";
+import HomeImage from '../../public/home.webp';
+import Footer from "@/src/components/Footer";
+import ThemeToggle from "@/src/components/ThemeToggle";
 
 export default function Home() {
     return (
