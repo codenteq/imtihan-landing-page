@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ApplicationLogo from '@/src/components/ApplicationLogo'
 
+
 export default function Footer() {
     return (
         <footer className="p-2 md:p-4">
