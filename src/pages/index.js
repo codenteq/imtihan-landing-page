@@ -2,17 +2,19 @@ import Head from "next/head";
 import ApplicationLogo from "@/src/components/ApplicationLogo";
 import NavLink from "@/src/components/NavLink";
 import {
-    CalendarIcon, CheckBadgeIcon,
-    CheckCircleIcon,
+    CalendarIcon,
+    CheckBadgeIcon,
     CheckIcon,
     CreditCardIcon,
-    MicrophoneIcon,
-    VideoCameraIcon
 } from "@heroicons/react/24/outline";
 import Button from "@/src/components/Button";
 import Input from "@/src/components/Input";
 import Image from "next/image";
 import HomeImage from '../../public/home.webp';
+import ClassExamImage from '../../public/class-exam.webp';
+import OnlineCourseImage from '../../public/online-course.webp';
+import AnalyticsImage from '../../public/analytics.webp';
+import EventsImage from '../../public/events.webp';
 import Footer from "@/src/components/Footer";
 import ThemeToggle from "@/src/components/ThemeToggle";
 
@@ -78,7 +80,7 @@ export default function Home() {
 
                             <div className="flex flex-col items-center relative py-7 px-6 xl:py-10 xl:pr-10 xl:pl-52 rounded-lg overflow-hidden min-h-72">
                                 <picture>
-                                    <img src="/class-exam.webp"
+                                    <Image src={ClassExamImage}
                                          className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none"
                                          alt="İmtihan"
                                     />
@@ -98,8 +100,11 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col items-center relative py-7 px-6 xl:py-10 xl:pr-10 xl:pl-52 rounded-lg overflow-hidden min-h-72">
-                                <img src="/online-course.webp"
-                                     className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none" alt="İmtihan" />
+                                <Image
+                                    src={OnlineCourseImage}
+                                    className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none"
+                                    alt="İmtihan"
+                                />
                                 <div className="flex flex-col gap-2 text-sm md:text-base">
                                     <h5 className="mb-2 text-2xl font-semibold tracking-tight">
                                         Keşfedin, öğrenin ve büyüyün
@@ -114,8 +119,11 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col items-center relative py-7 px-6 xl:py-10 xl:pr-10 xl:pl-52 rounded-lg overflow-hidden min-h-72">
-                                <img src="/analytics.webp"
-                                     className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none" alt="İmtihan" />
+                                <Image
+                                    src={AnalyticsImage}
+                                    className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none"
+                                    alt="İmtihan"
+                                />
                                 <div className="flex flex-col gap-2 text-sm md:text-base">
                                     <h5 className="mb-2 text-2xl font-semibold tracking-tight">
                                         Kendizi keşfedin
@@ -129,8 +137,11 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col items-center relative py-7 px-6 xl:py-10 xl:pr-10 xl:pl-52 rounded-lg overflow-hidden min-h-72">
-                                <img src="/events.webp"
-                                     className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none" alt="İmtihan" />
+                                <Image
+                                    src={EventsImage}
+                                    className="mb-4 md:mb-8 md:h-52 md:object-contain xl:h-auto xl:mb-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-full xl:-mr-44 xl:max-w-none"
+                                    alt="İmtihan"
+                                />
                                 <div className="flex flex-col gap-2 text-sm md:text-base">
                                     <h5 className="mb-2 text-2xl font-semibold tracking-tight">
                                         Etkinlikler
