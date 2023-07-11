@@ -15,7 +15,7 @@ export default function ThemeToggle() {
 
     return (
         <>
-            <div className="fixed top-3.5 z-10">
+            <div>
                 {currentTheme === 'dark' ? (
                     <div
                         onClick={() => setTheme('light')}

@@ -16,7 +16,6 @@ import OnlineCourseImage from '../../public/online-course.webp';
 import AnalyticsImage from '../../public/analytics.webp';
 import EventsImage from '../../public/events.webp';
 import Footer from "@/src/components/Footer";
-import ThemeToggle from "@/src/components/ThemeToggle";
 
 export default function Home() {
     return (
@@ -27,13 +26,11 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <header className="flex justify-center block fixed w-full backdrop-blur-sm border-b border-zinc-100 px-2 sm:px-4 py-2.5 dark:bg-black/30 dark:border-zinc-900 z-10">
+            <header className="flex justify-center fixed w-full backdrop-blur-sm border-b border-zinc-100 px-2 sm:px-4 py-2.5 dark:bg-black/30 dark:border-zinc-900 z-10">
                 <ApplicationLogo width={144} height={32}/>
             </header>
 
             <main className="px-4 py-16 bg-white dark:bg-black w-full">
-                <ThemeToggle/>
-
                 <div className="max-w-6xl mx-auto">
                     <div>
                         <div className="text-center pt-16">
@@ -252,7 +249,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <div className="mb-9 md:mb-16 pt-16">
+                        <div className="mb-9 md:mb-16 pt-16" id="pricing">
                             <h2 className="mb-5 lg:mb-6 text-5xl leading-none font-semibold text-center">Basit bir fiyatlandırma</h2>
 
                             <p className="flex flex-col items-center justify-center gap-3 mb-9 lg:mb-10 md:flex-row md:gap-14">
@@ -277,12 +274,12 @@ export default function Home() {
                             <div className="lg:col-span-4 flex flex-col items-center text-center rounded-2xl md:rounded-3xl bg-yellow-50 text-neutral-900 py-11 px-6">
                                 <h3 className="mb-5 lg:mb-6 text-2xl lg:text-3xl font-medium">Sınavlar</h3>
                                 <p className="flex items-center gap-4 mb-5 lg:mb-7 text-5xl lg:text-6xl">
-                                    <span className="text-yellow-700 opacity-[.32] line-through">%10 </span>
-                                    <span className="font-semibold">%0</span>
+                                    <span className="text-yellow-700 opacity-[.32] line-through">17,99 </span>
+                                    <span className="font-semibold">0,00</span>
                                 </p>
 
                                 <p className="mt-auto font-medium lg:text-lg">
-                                    Denemeniz için ücretsiz!
+                                    Denemeniz için 1 ay ücretsiz!
                                 </p>
                             </div>
 
@@ -291,7 +288,7 @@ export default function Home() {
                                     Notlar, çevrimiçi sınavlar ve dersler
                                 </h3>
                                 <p className="flex items-center gap-4 mb-5 text-5xl lg:text-6xl">
-                                    <span className="font-semibold">%10</span>
+                                    <span className="font-semibold">17,99</span>
                                 </p>
                                 <p className="mt-auto font-medium lg:text-lg">
                                     Artı kredi kartı işlem ücretleri
