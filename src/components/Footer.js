@@ -22,7 +22,9 @@ export default function Footer() {
                                 <div className="col-span-3">
                                     <h4 className="mb-4 text-base font-medium">Yardım</h4>
                                     <div className="flex flex-col gap-3">
-                                        <a className="md:hover:underline" href="/#pricing">Fiyatlandırma</a>
+                                        <Link href="/#pricing">
+                                            <a className="md:hover:underline">Fiyatlandırma</a>
+                                        </Link>
                                         <a className="md:hover:underline" href="https://medium.com/@codenteq" target="_blank">Blog</a>
                                         <a className="md:hover:underline" href="https://imtihan-docs.vercel.app/">Geliştirici Dökümanları</a>
                                     </div>
@@ -41,8 +43,12 @@ export default function Footer() {
                                 </div>
                                 <p className="mb-4 flex flex-wrap gap-3 text-neutral-500 whitespace-nowrap">
                                     <span className="block w-full sm:inline sm:w-auto">&copy; İmtihan.</span>
-                                    <a className="md:hover:underline" href="/terms-of-services">Şartlar</a>
-                                    <a className="md:hover:underline" href="/privacy-policy">Gizlilik</a>
+                                    <Link href="/terms-of-services">
+                                        <a className="md:hover:underline">Şartlar</a>
+                                    </Link>
+                                    <Link href="/privacy-policy">
+                                        <a className="md:hover:underline">Gizlilik</a>
+                                    </Link>
                                 </p>
                                 <div className="flex gap-6">
                                     <a className="inline-flex items-center text-neutral-900  hover:text-[#1DA1F2] dark:hover:text-[#1DA1F2] dark:text-neutral-200 transition" href="https://twitter.com/codenteq" target="_blank" rel="noopener">

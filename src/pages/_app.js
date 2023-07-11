@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
       <>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-HT3FZFQV5E"/>
-        <Script>
+        <Script id="google-analytics">
             {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
